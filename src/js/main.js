@@ -1,12 +1,16 @@
-var el = document.createElement('script');
+// Start code below
 
-el.src = '<%= path %>/app.js';
+var el = document.createElement("script");
+
+el.src = "<%= path %>/app.js";
 document.body.appendChild(el);
+
+
 
 
 // THIS IS A .find() Polyfill
 if (!Array.prototype.find) {
-  Object.defineProperty(Array.prototype, 'find', {
+  Object.defineProperty(Array.prototype, "find", {
     value: function (predicate) {
       // 1. Let O be ? ToObject(this value).
       if (this == null) {
@@ -19,8 +23,8 @@ if (!Array.prototype.find) {
       var len = o.length >>> 0;
 
       // 3. If IsCallable(predicate) is false, throw a TypeError exception.
-      if (typeof predicate !== 'function') {
-        throw new TypeError('predicate must be a function');
+      if (typeof predicate !== "function") {
+        throw new TypeError("predicate must be a function");
       }
 
       // 4. If thisArg was supplied, let T be thisArg; else let T be undefined.
