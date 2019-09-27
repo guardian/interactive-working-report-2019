@@ -1,0 +1,50 @@
+.working-report__section {
+  @include mq(tablet) {
+    padding-bottom: 24px;
+  }
+  &__inner {
+
+    @include mq(tablet) {
+      background-color: #fff;
+      color: #121212;
+    }
+
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 580px;
+
+    @include mq(tablet) {
+      max-width: none;
+      width: 620px;
+      padding: 6px 20px 18px;
+      margin: 0;
+      font-size: 17px;
+      line-height: 24px;
+      border: 1px solid #121212;
+      border-left: 0;
+    }
+    @include mq(desktop) {
+      margin: 24px auto 24px;
+      transform: translateX(-150px);
+      padding-right: 60px;
+      padding-top: 24px;
+      border: 1px solid #121212;
+    }
+    @include mq(leftCol) {
+      // position: relative;
+      // z-index: 2;
+      transform: translateX(-52px);
+    }
+    @include mq(wide) {
+      // width: 1300px;
+    }
+
+    p {
+      margin: 0 0 8px;
+      @include mq(tablet) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

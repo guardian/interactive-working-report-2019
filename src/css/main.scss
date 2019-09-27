@@ -20,6 +20,14 @@
 @import "base";
 @import "header";
 @import "section-headers";
+@import "section-inner";
 @import "images";
-// @import "section-specific";
 
+
+.working-report__wrapper {
+    padding-bottom: 96px;
+    @include mq(tablet) {
+        background-color: #062962;
+        color: #fff;
+    }
+}

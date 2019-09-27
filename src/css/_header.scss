@@ -23,6 +23,11 @@
             background-color: #506991;
             z-index: 11;
             opacity: 0.5;
+            @include mq(tablet) {
+                opacity: 1;
+                background-color: #062962;
+                z-index: 21;
+            }
         }
     }
 
@@ -156,8 +161,12 @@
             @include mq(mobileMedium) {
                 font-size: 20px;
             }
+            @include mq(desktop) {
+                width: 448px;
+            }
             @include mq(leftCol) {
                 font-size: 22px;
+                width: 676px;
             }
         }
     }
