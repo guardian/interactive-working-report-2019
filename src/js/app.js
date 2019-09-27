@@ -32,19 +32,18 @@ function createSections() {
   var wr = document.querySelector('.working-report__wrapper');
   let wrSections = wr.querySelectorAll('blockquote');
   wrSections.forEach(function (el) {
-    console.log(el.innerText);
     let newSection = document.createElement('div');
     newSection.classList.add('working-report__section__inner');
     while (el.nextElementSibling != null && el.nextElementSibling.tagName != 'BLOCKQUOTE' && !el.nextElementSibling.classList.contains('working-report__section')) {
       newSection.appendChild(el.nextElementSibling);
-      if (el.innerText == 'Charity | The Guardian Foundation') {
-        console.log(el.nextElementSibling);
-      }
     }
     let newSectionWrapper = document.createElement('div');
     newSectionWrapper.classList.add('working-report__section');
     newSectionWrapper.appendChild(el);
     newSectionWrapper.appendChild(newSection);
+    let sectionClass = el.innerText.split(' | ')[0].trim()
+      .replace(/\s+/g, '-').replace('/[^a-zA-Z-]/g', '').toLowerCase();
+    newSectionWrapper.classList.add('section__' + sectionClass);
     wr.appendChild(newSectionWrapper)
 
   });
