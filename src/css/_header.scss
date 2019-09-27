@@ -133,6 +133,7 @@
             font-size: 20px;
             line-height: 23px;
             font-weight: 200;
+            max-width: 620px;
             @include mq(leftCol) {
                 font-size: 22px;
                 line-height: 25px;
@@ -149,9 +150,12 @@
             background-color: #B94317;
             height: 54px;
             line-height: 40px;
-            font-size: 20px;
+            font-size: 16px;
             padding-left: 24px;
             font-weight: 200;
+            @include mq(mobileMedium) {
+                font-size: 20px;
+            }
             @include mq(leftCol) {
                 font-size: 22px;
             }

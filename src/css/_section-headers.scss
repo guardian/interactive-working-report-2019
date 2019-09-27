@@ -5,7 +5,7 @@
   }
   .section-header {
     // border-top: 1px solid #506991;
-    // background-color: #062962;
+    background-color: #062962;
     margin-bottom: 46px;
     color: #fff;
     position: relative;
@@ -16,7 +16,8 @@
       margin-left: 10px;
       font-size: 66px;
       line-height: 60px;
-      padding: 6px 9px 90px 11px;
+      padding: 6px 9px 82px 11px;
+      // overflow: hidden;
       span {
         display: block;
       }
@@ -47,5 +48,23 @@
   }
   &__inner {
     padding: 0 10px;
+  }
+
+  @include mq($until:mobileMedium) {
+    &.delivering-our-goals,
+    &.journalism {
+      .section-header h2 {
+        font-size: 52px;
+        line-height: 48px;
+      }
+    }
+  }
+  @include mq($until:390px) {
+    &.journalism {
+      .section-header h2 {
+        font-size: 60px;
+        line-height: 64px;
+      }
+    }
   }
 }
