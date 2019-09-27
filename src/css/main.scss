@@ -10,6 +10,15 @@
 .element-atom,
 .interactive-atom {
     margin: 0 !important;
+
+    & + script + blockquote,
+    & + blockquote {
+        margin-top: 100vh;
+    }
 }
 
+@import "base";
 @import "header";
+@import "section-headers";
+// @import "section-specific";
+

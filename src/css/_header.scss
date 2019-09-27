@@ -2,13 +2,24 @@
     &__wrapper {
         width: 100%;
         background-color: #062962;
-        padding-top: 260px;
+        padding-top: 240px;
         // border-top: 1px solid #506991;
         position: relative;
         // @include mq(tablet) {
         //     min-height: 880px;
         //     height: 80vh;
         // }
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 1px;
+            background-color: #506991;
+            z-index: 11;
+            opacity: 0.5;
+        }
     }
 
     &__title {
@@ -16,7 +27,7 @@
         color: #121212;
         position: absolute;
         top: 46px;
-        left: 20px;
+        left: 10px;
         right: 0;
         bottom: 0;
         margin: 0 auto;
@@ -50,8 +61,8 @@
     &__subtitle {
         position: relative;
         z-index: 20;
-        margin-right: 20px;
-        padding: 6px 9px 68px 21px;
+        margin-right: 40px;
+        padding: 6px 9px 60px 24px;
         background-color: #BD5318;
         color: #fff;
         font-family: "Guardian Egyptian Web", "Guardian Text Egyptian Web",Georgia,serif;
@@ -70,10 +81,10 @@
             bottom: 0;
             position: absolute;
             background-color: #B94317;
-            height: 60px;
-            line-height: 44px;
+            height: 54px;
+            line-height: 40px;
             font-size: 20px;
-            padding-left: 20px;
+            padding-left: 24px;
             font-weight: 200;
             // strong {
             //     font-weight: 600;

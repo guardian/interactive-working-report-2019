@@ -1,0 +1,51 @@
+.working-report__section {
+  @include mq(tablet) {
+    background-color: #062962;
+    color: #fff;
+  }
+  .section-header {
+    // border-top: 1px solid #506991;
+    // background-color: #062962;
+    margin-bottom: 46px;
+    color: #fff;
+    position: relative;
+    h2 {
+      font-family: "Guardian Titlepiece","Guardian Headline Full","Guardian Headline","Guardian Egyptian Web",Georgia,serif;
+      background-color: #062962;
+      color: #fff;
+      margin-left: 10px;
+      font-size: 66px;
+      line-height: 60px;
+      padding: 6px 9px 90px 11px;
+      span {
+        display: block;
+      }
+
+      @include mq(tablet) {
+        background-color: #ffe500;
+        color: #121212;
+      }    
+    }
+    h3 {
+      font-family: "Guardian Egyptian Web", "Guardian Text Egyptian Web",Georgia,serif;
+      padding: 6px 9px 36px 14px;
+      background-color: #BD5318;
+      color: #fff;
+      font-size: 20px;
+      line-height: 23px;
+      font-weight: 600;
+      position: absolute;
+      left: 10px;
+      right: 80px;
+      bottom: 0;
+      transform: translateY(46px);
+    }
+    .section-number {
+      display: none;
+      font-family: "Guardian Titlepiece","Guardian Headline Full","Guardian Headline","Guardian Egyptian Web",Georgia,serif;
+    }
+  }
+  &__inner {
+    padding: 0 10px;
+  }
+}
