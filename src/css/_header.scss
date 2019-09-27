@@ -1,14 +1,18 @@
 .wr-header {
     &__wrapper {
-        width: 100%;
         background-color: #062962;
-        padding-top: 240px;
         border-top: 1px solid #506991;
         position: relative;
-        // @include mq(tablet) {
-        //     min-height: 880px;
-        //     height: 80vh;
-        // }
+        width: 100%;
+        padding-top: 240px;
+
+        @include mq(tablet) {
+            padding-top: 340px;
+        }
+        @include mq(desktop) {
+            padding-top: 0;
+        }
+
         &:after {
             content: '';
             position: absolute;
@@ -19,6 +23,23 @@
             background-color: #506991;
             z-index: 11;
             opacity: 0.5;
+        }
+    }
+
+    &__inner {
+        @include mq(desktop) {
+            width: 980px;
+            margin: auto;
+            position: relative;
+            height: 620px;
+        }
+        @include mq(leftCol) {
+            width: 1140px;
+            height: 800px;
+        }
+        @include mq(wide) {
+            width: 1300px;
+            height: 880px;
         }
     }
 
@@ -33,6 +54,17 @@
         margin: 0 auto;
         z-index: 10;
         padding: 9px;
+        @include mq(desktop) {
+            top: 80px;
+            width: 680px;
+            left: -10px;
+            margin: 0;
+        }
+        @include mq(leftCol) {
+            padding: 12px;
+            width: 910px;
+            top: 120px;
+        }
         .working,
         .report {
             display: block;
@@ -43,10 +75,14 @@
                 font-size: 68px;
                 line-height: 62px;
             }
-            // @include mq(tablet) {
-            //     font-size: 160px;
-            //     line-height: 135px;
-            // }
+            @include mq(tablet) {
+                font-size: 120px;
+                line-height: 105px;
+            }
+            @include mq(leftCol) {
+                font-size: 160px;
+                line-height: 135px;
+            }
         }
         .working {
 
@@ -54,6 +90,15 @@
         .report {
             @include mq(mobileMedium) {
                 padding-left: 101px;
+            }
+            @include mq(tablet) {
+                padding-left: 177px;
+            }
+            @include mq(desktop) {
+                padding-left: 229px;
+            }
+            @include mq(leftCol) {
+                padding-left: 236px;
             }
         }
     }
@@ -66,11 +111,32 @@
         background-color: #BD5318;
         color: #fff;
         font-family: "Guardian Egyptian Web", "Guardian Text Egyptian Web",Georgia,serif;
-        position: relative;;
+        position: relative;
+
+        @include mq(desktop) {
+            position: absolute;
+            bottom: 0;
+            left: 216px;
+            width: 440px;
+            padding-right: 140px;
+        }
+        @include mq(leftCol) {
+            left: 224px;
+            padding-bottom: 100px;
+            width: 480px;
+            padding-right: 276px;
+        }
+        @include mq(wide) {
+            padding-bottom: 140px;
+        }
         p {
             font-size: 20px;
             line-height: 23px;
             font-weight: 200;
+            @include mq(leftCol) {
+                font-size: 22px;
+                line-height: 25px;
+            }
         }
         strong {
             font-weight: 600;
@@ -86,9 +152,9 @@
             font-size: 20px;
             padding-left: 24px;
             font-weight: 200;
-            // strong {
-            //     font-weight: 600;
-            // }
+            @include mq(leftCol) {
+                font-size: 22px;
+            }
         }
     }
 }
