@@ -1,9 +1,39 @@
-.element-image {
+figure.element-image {
+  margin: 12px 0;
+
+  @include mq(tablet) {
+    margin: 12px -20px;
+  }
+
+  @include mq(desktop) {
+    margin-right: -60px;
+  }
+
+  &.element--immersive {
+    margin: 0;
+  }
+
+
   img {
     width: 100%;
     height: auto;
   }
   figcaption {
     display: none;
+
+    font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 3px 0 12px;
+    padding-top: 0;
+    max-width: 480px;
+    color: #767676;
+
+    .element-image__caption {
+
+    }
+    .element-image__credit {
+      
+    }
   }
-}
+} 
