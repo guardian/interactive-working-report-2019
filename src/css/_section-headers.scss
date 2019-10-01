@@ -89,20 +89,20 @@
     }
   }
 
+  @include mq($until:390px) {
+    &.journalism {
+      .section-header h2 {
+        font-size: 60px;
+        line-height: 64px;
+      }
+    }
+  }
   @include mq($until:mobileMedium) {
     &.delivering-our-goals,
     &.journalism {
       .section-header h2 {
         font-size: 52px;
         line-height: 48px;
-      }
-    }
-  }
-  @include mq($until:390px) {
-    &.journalism {
-      .section-header h2 {
-        font-size: 60px;
-        line-height: 64px;
       }
     }
   }
