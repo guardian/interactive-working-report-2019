@@ -30,21 +30,32 @@ figure.element-image {
     height: auto;
   }
   figcaption {
-    display: none;
-
-    font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-    margin: 3px 0 12px;
-    padding-top: 0;
-    max-width: 480px;
-    color: #767676;
-
+    padding: 0;
+    margin: 0;
+    position: relative;
     .element-image__caption {
-
+      display: none;
     }
     .element-image__credit {
-      
+      display: none;
+
+      opacity: 0;
+      position: absolute;
+      padding-top: 0;
+      font-size: 12px;
+      line-height: 14px;
+      max-width: 480px;
+      font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+      color: #f6f6f6;
+      bottom: 0;
+      right: 0;
+      padding: 5px 10px;
+      background-color: rgba(#000, 0.75);
+    }
+  }
+  &:hover {
+    .element-image__credit {
+      opacity: 1;
     }
   }
 } 
