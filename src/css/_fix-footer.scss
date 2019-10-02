@@ -4,4 +4,9 @@
   .footer__email-container {
     display: none;
   }
+  @include mq(wide) {
+    .colophon__list:last-child {
+      width: 325px
+    }
+  }
 }
