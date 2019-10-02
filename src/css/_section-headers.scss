@@ -98,6 +98,7 @@
         width: 240px;
         height: 160px;
         font-size: 120px;
+        z-index: 2;
         position: absolute;
         right: 0;
         bottom: 30px;
@@ -117,20 +118,45 @@
         width: 300px;
         height: 210px;
         font-size: 160px;
+        right: 140px;
       }
-  }
+      @include mq(leftCol) {
+        .section-number {
+          right: 136px;
+        }
+      }    
+      @include mq(wide) {
+        .section-number {
+          right: 296px;
+        }
+      }
+    }
   }
 
   @include mq($until:390px) {
+    &.delivering-our-goals,
     &.journalism {
       .section-header h2 {
         font-size: 60px;
-        line-height: 64px;
+        line-height: 54px;
+      }
+    }
+  }
+
+  @include mq($until:mobileMedium) {
+    &.awards-including,
+    &.delivering-our-goals,
+    &.the-guardian-in-america,
+    &.the-guardian-in-australia,
+    &.at-the-guardian,
+    &.journalism {
+      .section-header h2 {
+        font-size: 60px;
+        line-height: 54px;
       }
     }
   }
   @include mq($until:mobileMedium) {
-    &.awards-including,
     &.delivering-our-goals,
     &.journalism {
       .section-header h2 {

@@ -1,4 +1,299 @@
-.working-report__section .section-header {
-  .section-header {
+.working-report__section {
+
+  // 1: Space for hope
+  &.space-for-hope .section-header {
+    h2 span {
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-left: 1.4em;
+      }
+    }
+    @include mq(tablet) {
+      .section-number {
+        top: 0;
+        bottom: auto;
+        right: 40px;
+      }
+    }
+    @include mq(desktop) {
+      .section-number {
+        right: 160px;
+      }
+    }
+    @include mq(leftCol) {
+      .section-number {
+        right: 136px;
+      }
+    }
+    @include mq(wide) {
+      .section-number {
+        right: 296px;
+      }
+    }
+    
   }
+
+  // 2: Delivering our goals
+  &.delivering-our-goals .section-header {
+    h2 span {
+      &:nth-child(2),
+      &:nth-child(3) {
+        display: inline;
+      }
+    }
+    @include mq(tablet) {
+      .section-number {
+        top: auto;
+        bottom: -40px;
+        width: 220px;
+      }
+    }
+    @include mq(desktop) {
+      .section-number {
+        width: 240px;
+      }
+    }
+    @include mq(leftCol) {
+      .section-number {
+        width: 300px;
+        right: 80px;
+      }
+    }
+    @include mq(wide) {
+      .section-number {
+        right: 214px;
+      }
+    }
+  }
+
+  // 3: Our numbers
+  &.our-numbers .section-header {
+    h2 span {
+      &:nth-child(1),
+      &:nth-child(2) {
+        display: inline;
+      }
+    }
+    @include mq(tablet) {
+      .section-number {
+        top: -30px;
+        bottom: auto;
+      }
+    }
+    @include mq(leftCol) {
+      .section-number {
+        right: 52px;
+      }
+    }
+    @include mq(wide) {
+      .section-number {
+        right: 214px;
+      }
+    }
+  }
+
+  // 4: Journalism
+  &.journalism .section-header {
+    @include mq(tablet) {
+      h2 {
+        min-height: 140px;
+      }
+      .section-number {
+        top: auto;
+        bottom: -40px;
+      }
+    }
+    @include mq(desktop) {
+      .section-number {
+        right: 145px;
+      }
+    }
+    @include mq(leftCol) {
+      h2 {
+        min-height: 204px;
+      }
+      .section-number {
+        right: 40px;
+        bottom: -68px;
+      }
+    }
+    @include mq(wide) {
+      .section-number {
+        right: 80px;
+        bottom: -40px;
+      }
+    }
+  }
+
+  // 5: Support
+  &.support .section-header {
+    @include mq(tablet) {
+      .section-number {
+        top: -20px;
+        bottom: auto;
+        line-height: 120px;
+      }
+    }
+    @include mq(leftCol) {
+      h2 {
+        min-height: 160px;
+      }
+      .section-number {
+        top: -30px;
+        line-height: 165px;
+      }
+    }
+    @include mq(wide) {
+      .section-number {
+        right: 290px;
+      }
+    }
+  }
+
+  // 6: The Guardian in America
+  &.the-guardian-in-america .section-header {
+    h2 span {
+      &:nth-child(3) {
+        margin-left: 2.95em;
+      }
+      &:nth-child(4) {
+        margin-left: 0.3em;
+      }
+    }
+    @include mq(tablet) {
+      .section-number {
+        top: -30px;
+        bottom: auto;
+      }
+    }
+    @include mq(leftCol) {
+      .section-number {
+        right: 80px;
+      }
+    }
+    @include mq(wide) {
+      .section-number {
+        right: 214px;
+      }
+    }
+  }
+
+  // 7: The Guardian in Australia
+  &.the-guardian-in-australia .section-header {
+    h2 span {
+      &:nth-child(3) {
+        margin-left: 2.95em;
+      }
+      &:nth-child(4) {
+        margin-left: -0.2em;
+      }
+    }
+    @include mq(mobileMedium) {
+      h2 span {
+        &:nth-child(1),
+        &:nth-child(2) {
+          margin-left: 0.2em;
+        }
+        &:nth-child(3) {
+          margin-left: 3.15em;
+        }
+        &:nth-child(4) {
+          margin-left: 0;
+        }
+      }
+    }
+    @include mq(tablet) {
+      .section-number {
+        top: -30px;
+        bottom: auto;
+        line-height: 145px;
+      }
+    }
+    @include mq(leftCol) {
+      .section-number {
+        right: 55px;
+        top: -38px;
+      }
+    }
+    @include mq(wide) {
+      .section-number {
+        right: 215px;
+      }
+    }
+  }
+
+  // 8: At the Guardian
+  &.at-the-guardian .section-header {
+    h2 span {
+      &:nth-child(1),
+      &:nth-child(2) {
+        display: inline;
+      }
+    }
+    @include mq(tablet) {
+      .section-number {
+        top: -30px;
+        bottom: auto;
+      }
+    }
+    @include mq(leftCol) {
+      .section-number {
+        right: 55px;
+      }
+    }
+    @include mq(wide) {
+      .section-number {
+        right: 215px;
+      }
+    }
+  }
+
+
+  // 9: Charity
+  &.charity .section-header {
+    @include mq(tablet) {
+      .section-number {
+        top: auto;
+        bottom: -40px;
+        line-height: 100px;
+      }
+    }
+    @include mq(desktop) {
+      .section-number {
+        top: -30px;
+        bottom: auto;
+      }
+    }
+    @include mq(wide) {
+      .section-number {
+        right: 215px;
+      }
+    }
+  }
+
+  // 10: 97 awards including
+  &.awards-including .section-header {
+    h2 span {
+      &:nth-child(1),
+      &:nth-child(2) {
+        display: inline;
+      }
+    }
+    @include mq(tablet) {
+      h2 {
+        line-height: 114px;
+        span {
+          &:nth-child(3) {
+            margin-left: 0.1em;
+          }
+        }
+      }
+    }
+    @include mq(leftCol) {
+      h2 {
+        line-height: 160px;
+      }
+    }
+  }
+
 }
