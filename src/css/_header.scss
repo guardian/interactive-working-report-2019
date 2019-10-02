@@ -61,8 +61,8 @@
         padding: 9px;
         @include mq(desktop) {
             top: 80px;
-            width: 680px;
-            left: -10px;
+            width: 650px;
+            left: 10px;
             margin: 0;
         }
         @include mq(leftCol) {
@@ -81,8 +81,8 @@
                 line-height: 62px;
             }
             @include mq(tablet) {
-                font-size: 120px;
-                line-height: 105px;
+                font-size: 118px;
+                line-height: 102px;
             }
             @include mq(leftCol) {
                 font-size: 160px;
@@ -97,7 +97,7 @@
                 padding-left: 101px;
             }
             @include mq(tablet) {
-                padding-left: 177px;
+                padding-left: 175px;
             }
             @include mq(desktop) {
                 padding-left: 229px;
