@@ -90,7 +90,28 @@
     }
     .section-number {
       display: none;
-      font-family: "Guardian Titlepiece","Guardian Headline Full","Guardian Headline","Guardian Egyptian Web",Georgia,serif;
+      @include mq(tablet) {
+        display: block;
+        background-color: #F9B376;
+        font-family: "Guardian Titlepiece","Guardian Headline Full","Guardian Headline","Guardian Egyptian Web",Georgia,serif;
+        width: 240px;
+        height: 160px;
+        font-size: 120px;
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        line-height: 160px;
+        text-align: center;
+        text-indent: 90px;
+        -webkit-text-stroke-color: #062962;
+        @include mq(leftCol) {
+          width: 340px;
+          height: 210px;
+          font-size: 160px;
+        }
+      }
     }
   }
 

@@ -1,6 +1,9 @@
 .working-report__section.awards-including {
   margin-bottom: 0;
   padding-bottom: 0;
+  .section-number {
+    display: none;
+  }
   .working-report__section__inner {
     padding-bottom: 96px;
   }
