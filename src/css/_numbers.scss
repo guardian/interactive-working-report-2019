@@ -1,4 +1,9 @@
 .working-report__section.our-numbers {
+  @include mq(tablet) {
+    .section-header {
+      background-color: transparent;
+    }
+  }
   .working-report__section__inner {
     width: auto;
     transform: none;
@@ -6,6 +11,7 @@
     @include mq(tablet) {
       margin-top: -24px;
       padding-top: 24px;
+      padding-bottom: 72px;
     }
     @include mq(desktop) {
       padding-top: 76px;

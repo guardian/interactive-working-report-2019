@@ -16,7 +16,7 @@
 
     @include mq(tablet) {
       max-width: none;
-      width: 620px;
+      width: 590px;
       padding: 6px 20px 18px;
       margin: 0;
       font-size: 17px;
@@ -26,7 +26,7 @@
     }
     @include mq(desktop) {
       margin: 24px auto 24px;
-      transform: translateX(-150px);
+      transform: translateX(-145px);
       padding-right: 60px;
       padding-top: 24px;
       border: 1px solid #121212;
@@ -35,9 +35,12 @@
       // position: relative;
       // z-index: 2;
       transform: translateX(-52px);
+      // padding-right: 0;
     }
     @include mq(wide) {
       // width: 1300px;
+      transform: translateX(-47px);
+      padding-right: 70px;
     }
 
     p {

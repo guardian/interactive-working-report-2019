@@ -1,5 +1,5 @@
 .working-report__section {
-  margin-bottom: 64px;
+  margin-bottom: 24px;
   &:first-of-type .section-header {
     border-top: 1px solid #506991;
   }
@@ -28,7 +28,6 @@
       font-size: 66px;
       line-height: 60px;
       padding: 6px 9px 96px 11px;
-      min-height: 140px;
       // overflow: hidden;
       span {
         display: block;
@@ -42,13 +41,14 @@
       @include mq(tablet) {
         background-color: #ffe500;
         color: #121212;
-        font-size: 120px;
-        line-height: 105px;
+        font-size: 118px;
+        line-height: 102px;
       }
       @include mq(desktop) {
-        width: 680px;
-        margin-left: -10px;
+        width: 650px;
+        margin-left: 10px;
         padding-left: 9px;
+        min-height: 140px;
       }
 
       @include mq(leftCol) {
@@ -107,13 +107,18 @@
         text-align: center;
         text-indent: 90px;
         -webkit-text-stroke-color: #062962;
-        @include mq(leftCol) {
-          width: 340px;
-          height: 210px;
-          font-size: 160px;
-        }
       }
-    }
+      @include mq(desktop) {
+        right: 160px;
+        bottom: auto;
+        top: 0;
+      }
+      @include mq(leftCol) {
+        width: 300px;
+        height: 210px;
+        font-size: 160px;
+      }
+  }
   }
 
   @include mq($until:390px) {

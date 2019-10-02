@@ -9,6 +9,13 @@ figure.element-image {
     margin-right: -60px;
   }
 
+  @include mq(wide) {
+    margin-right: -70px;
+    &.element--showcase {
+      margin-right: -130px;
+    }
+  }
+
   &.element--immersive {
     margin: 0;
   }
