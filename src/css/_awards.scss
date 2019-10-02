@@ -24,12 +24,16 @@
 
   p {
     font-family: "Guardian Egyptian Web", "Guardian Text Egyptian Web",Georgia,serif;
-    padding: 6px 9px 36px 14px;
+    padding: 6px 18px 36px 14px;
     background-color: #ffe500;
     font-size: 20px;
     line-height: 23px;
     font-weight: 200;
     margin: 0 0 18px;
+    position: relative;
+    z-index: 10;
+    color: #062962;
+
     strong {
       font-weight: 600;
     }
@@ -37,6 +41,58 @@
       font-size: 22px;
       line-height: 24px;
     }
+
+    @include mq(tablet) {
+      margin-left: 180px;
+      max-width: 405px;
+      padding-left: 20px;
+      padding-right: 136px;
+      margin-bottom: 42px;
+      &:before {
+        content: '';
+        display: block;
+        width: 200px;
+        height: 110px;
+        border: 1px solid #506991;
+        background-color: rgba(#fff,0.5);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;  
+        position: absolute;
+        top: -18px;
+        left: -190px;
+      }
+      &:nth-child(1):before {
+        background-image: url(https://uploads.guim.co.uk/2019/10/02/wakeley-award@2x.png);
+      }
+      &:nth-child(2):before {
+        background-image: url(https://uploads.guim.co.uk/2019/10/02/british-journalism-awards@2x.png);
+      }
+      &:nth-child(3):before {
+        background-image: url(https://uploads.guim.co.uk/2019/10/02/the-webby-awards@2x.png);
+      }
+      &:nth-child(4):before {
+        background-image: url(https://uploads.guim.co.uk/2019/10/02/media-week-award@2x.png);
+      }
+      &:nth-child(5):before {
+        background-image: url(https://uploads.guim.co.uk/2019/10/02/wan-ifra@2x.png);
+      }
+      &:nth-child(6):before {
+        background-image: url(https://uploads.guim.co.uk/2019/10/02/foreign-press-award@2x.png);
+      }
+    }
+    @include mq(desktop) {
+      width: 405px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include mq(leftCol) {
+      transform: translateX(-90px);
+    }
+    @include mq(wide) {
+      transform: translateX(-100px);
+    }
+
  
   }
 }
