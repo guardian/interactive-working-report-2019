@@ -1,0 +1,76 @@
+.working-report__section.our-numbers {
+  .working-report__section__inner {
+    width: auto;
+    transform: none;
+    border: 0;
+    @include mq(tablet) {
+      margin-top: -24px;
+      padding-top: 24px;
+    }
+    @include mq(desktop) {
+      padding-top: 76px;
+    }
+    @include mq(leftCol) {
+      padding-top: 24px;
+      margin-top: 24px;
+    }
+
+  }
+
+  p {
+    max-width: 620px;
+    margin: 12px;
+
+    @include mq(leftCol) {
+      margin: 12px auto;
+      transform: translateX(-55px)
+    }
+    @include mq(wide) {
+      transform: translateX(-55px)
+    }
+
+    &:nth-child(1) {
+      // First heading
+      font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+      color: #767676;
+    }
+    &:nth-child(2n+3) {
+      // Labels
+      font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+      border-bottom: 1px solid rgba(#6B5840, 0.33);
+      padding-bottom: 6px;
+      // color: #6B5840;
+    }
+
+    &:nth-child(2n+2) {
+      // Numbers
+      margin-top: 36px;
+      margin-bottom: 0;
+      font-family: "Guardian Titlepiece","Guardian Headline Full","Guardian Headline","Guardian Egyptian Web",Georgia,serif;
+      font-size: 66px;
+      line-height: 60px;
+      color: #C70000;
+
+      @include mq($until:390px) {
+        font-size: 60px;
+        line-height: 64px;
+        margin-top: 24px;
+      }
+      @include mq($until:mobileMedium) {
+        font-size: 52px;
+        line-height: 48px;
+      }
+      
+    }
+
+    &:nth-child(4n+2) {
+      // Odd numbers
+      color: #AB0613;
+    }
+
+  }
+}
