@@ -1,4 +1,5 @@
 .working-report__section {
+  margin-bottom: 64px;
   &:first-of-type .section-header {
     border-top: 1px solid #506991;
   }
@@ -76,6 +77,10 @@
         width: 230px;
         left: 0;
       }
+      @include mq(tablet) {
+        font-size: 22px;
+        line-height: 24px;
+      }
       @include mq(desktop) {
         left: 214px;
       }
@@ -98,6 +103,7 @@
     }
   }
   @include mq($until:mobileMedium) {
+    &.awards-including,
     &.delivering-our-goals,
     &.journalism {
       .section-header h2 {

@@ -43,8 +43,9 @@ function createSections() {
     newSectionWrapper.classList.add('working-report__section');
     newSectionWrapper.appendChild(el);
     newSectionWrapper.appendChild(newSection);
-    let sectionClass = el.innerText.split(' | ')[0].trim()
-      .replace(/\s+/g, '-').replace('/[^a-zA-Z-]/g', '').toLowerCase();
+    let sectionClass = el.innerText.split(' | ')[0]
+      .replace(/[1-9]/g, '').trim()
+      .toLowerCase().replace(/\s+/g, '-');
     newSectionWrapper.classList.add(sectionClass);
     newSectionWrapper = sectionMods(newSectionWrapper, sectionNum);
     wr.appendChild(newSectionWrapper)
