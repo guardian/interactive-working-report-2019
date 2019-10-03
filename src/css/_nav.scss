@@ -21,7 +21,7 @@
     }
     &:hover {
       & + .overlay {
-        opacity: 0.5;
+        opacity: 0.6;
         transition: opacity 360ms;
       }
       .label {
