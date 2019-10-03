@@ -1,6 +1,7 @@
 structureDoc();
 
 function structureDoc() {
+  console.log('v3 1759');
   createArticleWrapper();
   createSections();
   createNav();
@@ -131,6 +132,7 @@ function setNavEvents() {
       scrollTo(sWrapperTop);
     })
   });
+
 }
 
 function getCurrentSection() {
@@ -140,7 +142,7 @@ function getCurrentSection() {
   let currentSection = false;
 
   for (let section of sectionsArr) {
-    if (section.getBoundingClientRect().top < 0) {
+    if (section.getBoundingClientRect().top - 60 < 0) {
       currentSection = section;
       break;
     }

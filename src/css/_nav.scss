@@ -39,7 +39,12 @@
     color: #f6f6f6;
 
     &:hover {
-      color: #FFE500;
+      .label {
+        color: #FFE500;
+      }
+      .marker {
+        background-color: #FFE500;
+      }
     }
 
     .label {
@@ -76,10 +81,12 @@
       margin-left: 4px;
       width: 2px;
       height: 20px;
-      background-color: currentColor;
+      background-color: #aaa;
     }
     &.current {
-        color: #ffe500;
+      .marker {
+        background-color: #ffe500;
+      }
     }
   }
 
