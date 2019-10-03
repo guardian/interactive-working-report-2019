@@ -1,0 +1,100 @@
+.working-report__nav {
+  display: none;
+
+  @include mq(tablet) {
+    @media (hover: hover) and (pointer: fine) {
+      display: block;
+    }
+  }
+
+
+  &__inner {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    
+    z-index: 120;
+    padding: 40px 20px;
+    @include mq(leftCol) {
+      padding-left: 60px;
+    }
+    &:hover {
+      & + .overlay {
+        opacity: 0.5;
+        transition: opacity 360ms;
+      }
+      .label {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+      }
+    }
+  }
+  &__section {
+    text-align: right;
+    white-space: nowrap;
+    padding: 3px 0;
+    cursor: pointer;
+    color: #f6f6f6;
+
+    &:hover {
+      color: #FFE500;
+    }
+
+    .label {
+      // display: none;
+      display: inline-block;
+      font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+      font-size: 14px;
+      padding: 0;
+      margin: -1px 0 0;
+      font-family: "Guardian Egyptian Web", "Guardian Text Egyptian Web",Georgia,serif;
+      font-size: 18px;
+      font-weight: 600;
+
+      vertical-align: middle;
+
+      opacity: 0;
+      transform: translateX(60px);
+      visibility: hidden;
+      
+      transition: transform 400ms cubic-bezier(.32,.03,.19,1), opacity 250ms cubic-bezier(.32,.03,.19,1), visibility 250ms;
+    }
+
+    @for $i from 1 through 12 {
+      &:nth-child(#{$i}) {
+        .label {
+          transition-delay: (#{$i*25}ms);
+        }
+      }
+    }
+    
+    .marker {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 4px;
+      width: 2px;
+      height: 20px;
+      background-color: currentColor;
+    }
+    &.current {
+        color: #ffe500;
+    }
+  }
+
+  .overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    z-index: 110;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1000ms; // animation OUT
+  }
+
+}
