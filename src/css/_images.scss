@@ -20,6 +20,26 @@ figure.element-image {
     margin: 0;
   }
 
+  &.element--showcase .element-image__credit {
+    @include mq(leftCol) {
+      margin-right: -110px;
+    }
+    @include mq(wide) {
+      margin-right: -260px;
+    }
+  }
+
+  .element-atom + &,
+  .element-atom + script + & {
+    border-bottom: 1px solid #506991;
+  
+    .element-image__credit {
+      bottom: -1px;
+      border-bottom: 1px solid #001;
+    }
+  }
+  
+
   .working-report__section__inner > &:last-child {
     @include mq(tablet) {
       margin-bottom: -18px;
