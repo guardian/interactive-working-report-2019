@@ -1,10 +1,21 @@
 structureDoc();
 
 function structureDoc() {
-  console.log('v3 1759');
+  console.log('v4');
+  fixLoResImage();
   createArticleWrapper();
   createSections();
   createNav();
+}
+
+function fixLoResImage() {
+  let immImgs = document.querySelectorAll('.element--immersive img');
+  immImgs.forEach(function (i) {
+    let loSrc = i.getAttribute('src');
+    let hiSrc = loSrc.replace('1000.jpg', '2000.jpg');
+    let hhSrc = loSrc.replace('1000.jpg', '3000.jpg');
+    i.setAttribute('srcset', loSrc + ' 1000w, ' + hiSrc + ' 2000w, ' + hhSrc + ' 3000w');
+  });
 }
 
 function createArticleWrapper() {

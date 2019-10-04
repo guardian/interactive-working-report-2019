@@ -74,7 +74,15 @@
         display: inline;
       }
     }
-    @include mq(tablet) {
+    @include mq($from:tablet, $until:desktop) {
+      .section-number {
+        bottom: -50px;
+        line-height: 96px;
+        height: 130px;
+      }
+    }
+
+    @include mq(desktop) {
       .section-number {
         top: -30px;
         bottom: auto;
@@ -96,11 +104,11 @@
   &.journalism .section-header {
     @include mq(tablet) {
       h2 {
-        min-height: 140px;
+        min-height: 150px;
       }
       .section-number {
         top: auto;
-        bottom: -40px;
+        bottom: -46px;
       }
     }
     @include mq(desktop) {
@@ -181,25 +189,12 @@
   // 7: The Guardian in Australia
   &.the-guardian-in-australia .section-header {
     h2 span {
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-left: 0.2em;
+      }
       &:nth-child(3) {
-        margin-left: 2.95em;
-      }
-      &:nth-child(4) {
-        margin-left: -0.2em;
-      }
-    }
-    @include mq(mobileMedium) {
-      h2 span {
-        &:nth-child(1),
-        &:nth-child(2) {
-          margin-left: 0.2em;
-        }
-        &:nth-child(3) {
-          margin-left: 3.15em;
-        }
-        &:nth-child(4) {
-          margin-left: 0;
-        }
+        margin-left: 3.15em;
       }
     }
     @include mq(tablet) {

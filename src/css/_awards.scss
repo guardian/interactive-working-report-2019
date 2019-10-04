@@ -6,6 +6,7 @@
   }
   .working-report__section__inner {
     padding-bottom: 96px;
+    padding-top: 32px;
   }
   @include mq(tablet) {
     .section-header {
@@ -26,7 +27,7 @@
   }
 
   p {
-    font-family: "Guardian Egyptian Web", "Guardian Text Egyptian Web",Georgia,serif;
+    font-family: "Guardian Headline", "Guardian Egyptian Web", "Guardian Text Egyptian Web",Georgia,serif;
     padding: 6px 18px 36px 14px;
     background-color: #ffe500;
     font-size: 20px;
@@ -38,7 +39,7 @@
     color: #062962;
 
     strong {
-      font-weight: 600;
+      font-weight: 700;
     }
     @include mq(tablet) {
       font-size: 22px;

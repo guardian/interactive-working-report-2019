@@ -4,21 +4,18 @@
   }
   &__inner {
 
-    @include mq(tablet) {
-      background-color: #fff;
-      color: #121212;
-    }
-
     padding: 0 10px;
     font-size: 16px;
     line-height: 24px;
     max-width: 580px;
 
     @include mq(tablet) {
+      background-color: #fff;
+      color: #121212;
       max-width: none;
       width: 590px;
-      padding: 6px 20px 18px;
-      margin: 0;
+      padding: 32px 20px 18px;
+      margin: 24px 0 0;
       font-size: 17px;
       line-height: 24px;
       border: 1px solid #121212;
@@ -45,6 +42,8 @@
 
     p {
       margin: 0 0 8px;
+      font-size: inherit;
+      line-height: inherit;
       @include mq(tablet) {
         margin-bottom: 12px;
       }
@@ -55,10 +54,10 @@
     }
 
     h2 {
-      font-family: "Guardian Egyptian Web", "Guardian Text Egyptian Web",Georgia,serif;
+      font-family: "Guardian Headline", "Guardian Egyptian Web", "Guardian Text Egyptian Web",Georgia,serif;
       margin: 24px 0 12px;
       color: #062962;
-      font-weight: 800;
+      font-weight: 700;
     }
   }
 }

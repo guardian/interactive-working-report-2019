@@ -21,8 +21,10 @@ figure.element-image {
   }
 
   .working-report__section__inner > &:last-child {
-    margin-bottom: -18px;
-    margin-top: 24px;
+    @include mq(tablet) {
+      margin-bottom: -18px;
+      margin-top: 24px;
+    }
   }
 
   img {
