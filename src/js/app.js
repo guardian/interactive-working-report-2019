@@ -108,8 +108,10 @@ function setNavEvents() {
 
   // Highlight current section on scroll
   window.addEventListener('scroll', function () {
-    let s = getCurrentSection();
+    let s = getCurrentSection(0);
+    let n = getCurrentSection(-0.67 * window.innerHeight);
 
+    // highlight in nav
     if (s) {
       let navSection = document.querySelector('[data-section-class="' + s.dataset.section + '"]');
       if (!navSection.classList.contains('current')) {
@@ -120,6 +122,12 @@ function setNavEvents() {
         navSection.classList.add('current');
       }
     }
+
+    // // highlight in content
+    // if (n) {
+    //   let section = document.querySelector('.working-report__section.' + n.dataset.section);
+    //   section.classList.add('seen');
+    // }
   });
 
   // Scroll there on clicks
@@ -135,14 +143,14 @@ function setNavEvents() {
 
 }
 
-function getCurrentSection() {
+function getCurrentSection(offset) {
   let sections = document.querySelectorAll('.working-report__section');
   let sectionsArr = [].slice.call(sections).reverse();
 
   let currentSection = false;
 
   for (let section of sectionsArr) {
-    if (section.getBoundingClientRect().top - 60 < 0) {
+    if (section.getBoundingClientRect().top + offset - 60 < 0) {
       currentSection = section;
       break;
     }

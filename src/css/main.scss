@@ -35,4 +35,9 @@
         background-color: #062962;
         color: #fff;
     }
+
+    // fix for inherited css
+    .current {
+        font-weight: normal;
+    }
 }

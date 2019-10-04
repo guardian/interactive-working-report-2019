@@ -28,8 +28,9 @@
       font-size: 66px;
       line-height: 60px;
       padding: 6px 9px 96px 11px;
-      // overflow: hidden;
-      span {
+      // transform: translateY(-10%);
+      // transition: all 1s;
+    span {
         display: block;
       }
 
@@ -107,6 +108,8 @@
         line-height: 160px;
         text-align: center;
         text-indent: 90px;
+        // transform: translateX(20%);
+        // transition: all 2s;
         -webkit-text-stroke-color: #062962;
       }
       @include mq(desktop) {
@@ -165,4 +168,10 @@
       }
     }
   }
+  // &.seen {
+  //   .section-number,
+  //   h2 {
+  //     transform: none;
+  //   }
+  // }
 }
