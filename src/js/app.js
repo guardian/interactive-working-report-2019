@@ -1,7 +1,18 @@
-structureDoc();
+
+
+function checkExists(startAtomFunction) {
+  var checkInterval = setInterval(function () {
+    if (document.body.innerText.indexOf('The Guardian App') > 0) {
+      startAtomFunction();
+      clearInterval(checkInterval);
+    }
+  }, 100);
+}
+
+checkExists(structureDoc);
+
 
 function structureDoc() {
-  console.log('v4');
   fixLoResImage();
   createArticleWrapper();
   createSections();
