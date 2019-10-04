@@ -1,7 +1,6 @@
 .wr-header {
     &__wrapper {
         background-color: #062962;
-        border-top: 1px solid #506991;
         position: relative;
         width: 100%;
         padding-top: 240px;
@@ -25,7 +24,6 @@
             opacity: 0.5;
             @include mq(tablet) {
                 opacity: 1;
-                background-color: #062962;
                 z-index: 21;
             }
         }
