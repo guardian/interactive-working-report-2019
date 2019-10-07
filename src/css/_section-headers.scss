@@ -99,14 +99,14 @@
         font-family: "Guardian Titlepiece","Guardian Headline Full","Guardian Headline","Guardian Egyptian Web",Georgia,serif;
         width: 240px;
         height: 160px;
-        font-size: 120px;
+        font-size: 200px;
         z-index: 2;
         position: absolute;
         right: 0;
         bottom: 30px;
         color: transparent;
         -webkit-text-stroke-width: 1px;
-        line-height: 160px;
+        line-height: 126px;
         text-align: center;
         text-indent: 90px;
         // transform: translateX(20%);
@@ -121,18 +121,9 @@
       @include mq(leftCol) {
         width: 300px;
         height: 210px;
-        font-size: 160px;
+        font-size: 268px;
+        line-height: 156px;
         right: 140px;
-      }
-      @include mq(leftCol) {
-        .section-number {
-          right: 136px;
-        }
-      }    
-      @include mq(wide) {
-        .section-number {
-          right: 296px;
-        }
       }
     }
   }

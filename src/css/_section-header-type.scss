@@ -76,14 +76,15 @@
     }
     @include mq($from:tablet, $until:desktop) {
       .section-number {
-        bottom: -50px;
-        line-height: 96px;
-        height: 130px;
+        bottom: -80px;
+        line-height: 106px;
+        height: 160px;
       }
     }
 
     @include mq(desktop) {
       .section-number {
+        line-height: 106px;
         top: -30px;
         bottom: auto;
       }
@@ -91,6 +92,7 @@
     @include mq(leftCol) {
       .section-number {
         right: 52px;
+        line-height: 134px;
       }
     }
     @include mq(wide) {
@@ -109,6 +111,7 @@
       .section-number {
         top: auto;
         bottom: -46px;
+        line-height: 100px;
       }
     }
     @include mq(desktop) {
@@ -123,6 +126,7 @@
       .section-number {
         right: 40px;
         bottom: -68px;
+        line-height: 132px;
       }
     }
     @include mq(wide) {
@@ -139,7 +143,7 @@
       .section-number {
         top: -20px;
         bottom: auto;
-        line-height: 120px;
+        line-height: 100px;
       }
     }
     @include mq(leftCol) {
@@ -148,7 +152,7 @@
       }
       .section-number {
         top: -30px;
-        line-height: 165px;
+        line-height: 130px;
       }
     }
     @include mq(wide) {
@@ -172,11 +176,13 @@
       .section-number {
         top: -30px;
         bottom: auto;
+        line-height: 146px;
       }
     }
     @include mq(leftCol) {
       .section-number {
         right: 80px;
+        line-height: 192px;
       }
     }
     @include mq(wide) {
@@ -201,13 +207,14 @@
       .section-number {
         top: -30px;
         bottom: auto;
-        line-height: 145px;
+        line-height: 100px;
       }
     }
     @include mq(leftCol) {
       .section-number {
         right: 55px;
         top: -38px;
+        line-height: 132px;
       }
     }
     @include mq(wide) {
@@ -229,11 +236,13 @@
       .section-number {
         top: -30px;
         bottom: auto;
+        line-height: 146px;
       }
     }
     @include mq(leftCol) {
       .section-number {
         right: 55px;
+        line-height: 192px;
       }
     }
     @include mq(wide) {
@@ -250,13 +259,18 @@
       .section-number {
         top: auto;
         bottom: -40px;
-        line-height: 100px;
+        line-height: 102px;
       }
     }
     @include mq(desktop) {
       .section-number {
         top: -30px;
         bottom: auto;
+      }
+    }
+    @include mq(leftCol) {
+      .section-number {
+        line-height: 132px;
       }
     }
     @include mq(wide) {
