@@ -20,6 +20,18 @@ figure.element-image {
     margin: 0;
   }
 
+  // App stuff
+  & > a {
+    display: block;
+    line-height: 0;
+    pointer-events: none;
+    @include mq(tablet) {
+      + figcaption .element-image__credit {
+        opacity: 1
+      }
+    }
+  }
+
   &.element--showcase .element-image__credit {
     @include mq(leftCol) {
       margin-right: -110px;
