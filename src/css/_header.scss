@@ -111,26 +111,30 @@
         z-index: 20;
         margin-right: 40px;
         padding: 6px 9px 60px 24px;
-        background-color: #BD5318;
-        color: #fff;
+        // background-color: #BD5318;
+        // color: #fff;
+        background-color: #90dcff;
+        color: #121212;
+
         font-family: "Guardian Headline", "Guardian Egyptian Web", "Guardian Text Egyptian Web",Georgia,serif;
         position: relative;
 
         @include mq(desktop) {
             position: absolute;
             bottom: 0;
-            left: 216px;
+            left: 232px;
             width: 440px;
-            padding-right: 140px;
+            padding-right: 120px;
         }
         @include mq(leftCol) {
-            left: 224px;
+            left: 240px;
             padding-bottom: 100px;
             width: 480px;
-            padding-right: 276px;
+            padding-right: 260px;
         }
         @include mq(wide) {
             padding-bottom: 140px;
+            padding-right: 280px;
         }
         p {
             font-size: 20px;
@@ -150,7 +154,8 @@
             right: 0;
             bottom: 0;
             position: absolute;
-            background-color: #B94317;
+            // background-color: #B94317;
+            background-color: rgba(#00b2ff, 0.2);
             height: 54px;
             line-height: 40px;
             font-size: 18px;
@@ -160,11 +165,11 @@
                 font-size: 20px;
             }
             @include mq(desktop) {
-                width: 448px;
+                width: 422px;
             }
             @include mq(leftCol) {
                 font-size: 22px;
-                width: 676px;
+                width: 680px;
             }
         }
     }
