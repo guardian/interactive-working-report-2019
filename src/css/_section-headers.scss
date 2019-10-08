@@ -6,6 +6,8 @@
     color: #fff;
     position: relative;
     margin: 0;
+    max-width: 100vw;
+    overflow: hidden;
 
     @include mq(desktop) {
       width: 980px;
@@ -177,6 +179,9 @@
   }
 
   &.seen {
+    .section-header {
+      overflow: visible;
+    }
     .section-number,
     h2 {
       transform: none;
