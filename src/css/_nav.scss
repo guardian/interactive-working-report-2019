@@ -13,7 +13,24 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    
+    // transform: translateY(-50%) translateX(100%);
+    // opacity: 0;
+    // visibility: hidden;
+
+    // animation: navIntro 4s normal forwards;
+    // animation-delay: 2s;
+    // @keyframes navIntro {
+    //     0% {
+    //       // transform: translateY(-50%) translateX(100%);
+    //       opacity: 0;
+    //       visibility: vi;
+    //     }
+    //     100% {
+    //       // transform: translateY(-50%) translateX(0);
+    //       opacity: 1;
+    //     }
+    // }
+  
     z-index: 1200;
     padding: 40px 20px;
     @include mq(leftCol) {
