@@ -14,7 +14,7 @@
     right: 0;
     transform: translateY(-50%);
     
-    z-index: 120;
+    z-index: 1200;
     padding: 40px 20px;
     @include mq(leftCol) {
       padding-left: 60px;
@@ -98,7 +98,7 @@
     right: 0;
     bottom: 0;
     background-color: #000;
-    z-index: 110;
+    z-index: 1100;
     opacity: 0;
     pointer-events: none;
     transition: opacity 1000ms; // animation OUT
