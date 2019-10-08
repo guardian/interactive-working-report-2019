@@ -145,11 +145,19 @@ function setNavEvents() {
       }
     }
 
-    // // highlight in content
-    // if (n) {
-    //   let section = document.querySelector('.working-report__section.' + n.dataset.section);
-    //   section.classList.add('seen');
-    // }
+    // highlight in content
+    if (window.pageYOffset <= 0) {
+      document.querySelectorAll('.working-report__section').forEach(function (s) {
+        s.classList.remove('seen');
+      })
+    }
+    if (n) {
+      let section = document.querySelector('.working-report__section.' + n.dataset.section);
+      section.classList.add('seen');
+    }
+
+
+
   });
 
   // Scroll there on clicks
