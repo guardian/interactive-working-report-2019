@@ -172,6 +172,12 @@
         margin-left: 0.3em;
       }
     }
+    @include mq(mobileLandscape) {
+      h3 {
+        padding-right: 8px;
+        width: 322px;
+      }
+    }
     @include mq(tablet) {
       .section-number {
         top: -30px;
@@ -201,6 +207,12 @@
       }
       &:nth-child(3) {
         margin-left: 3.15em;
+      }
+    }
+    @include mq(mobileLandscape) {
+      h3 {
+        padding-right: 8px;
+        width: 322px;
       }
     }
     @include mq(tablet) {
