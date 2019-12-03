@@ -51,6 +51,12 @@
 
     a {
       color: #062962;
+      border-bottom: 1px solid #BDBDBD;
+      transition: border-bottom 200ms;
+      &:hover {
+        border-bottom-color: #062962;
+        text-decoration: none;
+      }
     }
 
     h2 {
