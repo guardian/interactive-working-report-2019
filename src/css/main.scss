@@ -11,9 +11,11 @@
 .interactive-atom {
     margin: 0 !important;
 
-    & + script + blockquote,
-    & + blockquote {
-        margin-top: 100vh;
+    @media not print {
+        & + script + blockquote,
+        & + blockquote {
+            margin-top: 100vh;
+        }
     }
 }
 
@@ -27,6 +29,7 @@
 @import "awards";
 @import "fix-footer";
 @import "nav";
+@import "print-fixes";
 
 
 .working-report__wrapper {

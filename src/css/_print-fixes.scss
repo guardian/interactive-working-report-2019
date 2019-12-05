@@ -1,0 +1,169 @@
+@media print {
+  // Overrides for The Guardians's
+  // default print styles
+  figure {
+    display: block !important;
+  }
+
+  // Overrides related to
+  // @import "header";
+  .working-report__wrapper {
+    .wr-header {
+      &__inner,
+      &__title,
+      &__subtitle,
+      &__subtitle__year {
+        width: auto;
+        height: auto;
+        animation: none;
+        opacity: 1;
+        position: static;
+        line-height: 1.35em !important;
+      }
+      &__title {
+        span {
+          font-size: 96px;
+          line-height: 1.15em !important;
+          // display: inline;
+        }
+        margin-bottom: 1.15em !important;
+      }
+      &__wrapper:after {
+        display: none;
+      }
+    }
+  }
+
+  // Overrides related to
+  // @import "section-headers";
+  .working-report__section .section-header {
+    position: static;
+    h2,
+    h3 {
+      padding: 0 0 .33em !important;
+      margin: 0 !important;
+      line-height: 1.35em;
+      transition: none;
+      transform: none;
+      position: static;
+      width: auto;
+      height: auto;
+      span {
+        display: inline;
+      }
+    }
+    h2 {
+      line-height: 1.15em;
+      font-size: 76px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    .section-number {
+      display: none;
+    }
+  }
+
+
+  // Overrides related to
+  // @import "section-inner";
+  .working-report__section__inner {
+    transform: none;
+    padding-top: 1.35em !important;
+  }
+
+  // Overrides related to
+  // @import "images";
+  .element-image.element--immersive {
+    width: 100% !important;
+    height: auto !important;
+    margin: 1.35em 0 !important;
+  }
+
+  figure.element-image {
+    width: auto !important;
+    &:not(.element--immersive) {
+      border-bottom: 1px solid #ccc !important;
+      margin-bottom: 1.35em !important;
+    }
+    img {
+      width: 100% !important;
+      height: auto !important;
+    }
+    figcaption {
+      padding: 0;
+      margin: 0;
+      position: relative;
+      .element-image__credit,
+      .element-image__caption {
+        font-size: 14px;
+        line-height: 18px;
+        opacity: 1;
+        display: block !important;
+        position: static !important;
+      }
+   }
+  }
+
+
+
+
+
+
+
+  // Overrides related to
+  // @import "numbers";
+  .working-report__section.our-numbers {
+    .working-report__section__inner,
+    p {
+      transform: none;
+      font-size: 17px;
+
+    }
+    p {
+      &:nth-child(2n+2) {
+        // Numbers
+        font-size: 36px;
+        line-height: 36px;
+        margin-top: 36px !important;
+      }
+
+    }
+  }
+
+  // Overrides related to
+  // @import "nav";
+  .working-report__nav {
+    display: none !important;
+  }
+
+
+  .working-report__section {
+    .section-header {
+      h2,
+      h3 {
+        opacity: 1;
+      }
+      h2 span {
+        display: inline;
+        color: black;
+      }
+    }
+    .section-number {
+      display: none;
+    }
+  }
+
+  // Overrides related to
+  // @import "awards";
+  .working-report__section.awards p {
+    padding-left: 0;
+    transform: none;
+    &:before {
+      display: none;
+    }
+  }
+
+
+}
+
