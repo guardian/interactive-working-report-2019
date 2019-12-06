@@ -182,13 +182,13 @@
       .section-number {
         top: -30px;
         bottom: auto;
-        line-height: 146px;
+        line-height: 100px;
       }
     }
     @include mq(leftCol) {
       .section-number {
         right: 80px;
-        line-height: 192px;
+        line-height: 130px;
       }
     }
     @include mq(wide) {
@@ -219,14 +219,14 @@
       .section-number {
         top: -30px;
         bottom: auto;
-        line-height: 100px;
+        line-height: 148px;
       }
     }
     @include mq(leftCol) {
       .section-number {
         right: 55px;
         top: -38px;
-        line-height: 132px;
+        line-height: 192px;
       }
     }
     @include mq(wide) {
@@ -248,13 +248,13 @@
       .section-number {
         top: -30px;
         bottom: auto;
-        line-height: 146px;
+        line-height: 102px;
       }
     }
     @include mq(leftCol) {
       .section-number {
         right: 55px;
-        line-height: 192px;
+        line-height: 132px;
       }
     }
     @include mq(wide) {
@@ -271,7 +271,7 @@
       .section-number {
         top: auto;
         bottom: -40px;
-        line-height: 102px;
+        line-height: 148px;
       }
     }
     @include mq(desktop) {
@@ -282,7 +282,7 @@
     }
     @include mq(leftCol) {
       .section-number {
-        line-height: 132px;
+        line-height: 192px;
       }
     }
     @include mq(wide) {
