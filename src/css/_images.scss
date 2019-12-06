@@ -99,28 +99,35 @@ figure.element-image {
     }
   }
 
-  // .element-image__caption {
-  //   }
-
-    // .element-image__credit {
-    //   opacity: 0;
-    //   position: absolute;
-    //   padding-top: 0;
-    //   font-size: 12px;
-    //   line-height: 14px;
-    //   max-width: 480px;
-    //   font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-    //   color: #f6f6f6;
-    //   top: 0;
-    //   bottom: unset;
-    //   right: 0;
-    //   padding: 5px 10px;
-    //   background-color: rgba(#000, 0.75);
-    // }
-
-  &:hover {
+  &.element--illustration {
+    figcaption {
+      padding: 0;
+      &:before {
+        display: none;
+      }
+    }
+    .element-image__caption {
+      display: none;
+    }
     .element-image__credit {
+      @media (hover: hover) {
+        opacity: 0;
+      }
+      position: absolute;
+      padding-top: 0;
+      font-size: 12px;
+      line-height: 14px;
+      max-width: 480px;
+      font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+      color: #f6f6f6;
+      bottom: 0;
+      right: 0;
+      padding: 5px 10px;
+      background-color: rgba(#000, 0.75);
+    }
+    &:hover .element-image__credit {
       opacity: 1;
     }
   }
+
 }

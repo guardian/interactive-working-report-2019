@@ -17,6 +17,7 @@ function structureDoc() {
   createArticleWrapper();
   createSections();
   createNav();
+  tagIllustrations();
 }
 
 function fixLoResImage() {
@@ -220,3 +221,15 @@ Math.easeInOutQuad = function (t, b, c, d) {
   return -c / 2 * (t * (t - 2) - 1) + b;
 };
 
+function tagIllustrations() {
+  let allImages = document.querySelectorAll('.element-image');
+  let illustrationIds = [
+    '181a2210176471fda23ea5a0a5e67f2ef5b22634', '12c4d52c647fb04442104e7b793afc4efa15d4ca',
+    'a89e35e11cc4fedd5ad787e2ae456ef100a01a6a'];
+
+  allImages.forEach(function (i) {
+    if (illustrationIds.indexOf(i.dataset.mediaId) >= 0) {
+      i.classList.add('element--illustration');
+    }
+  });
+}
