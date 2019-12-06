@@ -82,7 +82,7 @@
       margin: 0;
 
       // Pre-animation
-      transform: translateY(46px) translateX(-4vw);
+      transform: translateY(41px) translateX(-4vw);
       opacity: 0;
       transition: opacity 360ms ease-in, transform 360ms ease-out;
       transition-delay: 480ms;
@@ -188,7 +188,7 @@
       opacity: 1;
     }
     h3 {
-      transform: translateY(46px);
+      transform: translateY(41px);
       opacity: 1;
     }
   }

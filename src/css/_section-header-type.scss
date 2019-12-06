@@ -2,12 +2,23 @@
 
   // 1: Space for hope
   &.space-for-hope .section-header {
+
     h2 span {
       &:nth-child(2),
       &:nth-child(3) {
         margin-left: 1.4em;
       }
     }
+
+    // Three line heading
+    h3 {
+      bottom: -24px;
+    }
+    margin-bottom: 24px;
+    @include mq(tablet) {
+      margin-bottom: 48px;
+    }
+
     @include mq(tablet) {
       .section-number {
         top: 0;
