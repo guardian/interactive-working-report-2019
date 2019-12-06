@@ -84,19 +84,25 @@
         background-image: url(https://uploads.guim.co.uk/2019/10/02/wakeley-award@2x.png);
       }
       &:nth-child(2):before {
-        background-image: url(https://uploads.guim.co.uk/2019/10/02/british-journalism-awards@2x.png);
+        background-image: url(https://uploads.guim.co.uk/2019/12/06/campaign-media@2x.png);
       }
       &:nth-child(3):before {
-        background-image: url(https://uploads.guim.co.uk/2019/10/02/the-webby-awards@2x.png);
+        background-image: url(https://uploads.guim.co.uk/2019/12/06/london-press-club@2x.png);
       }
       &:nth-child(4):before {
-        background-image: url(https://uploads.guim.co.uk/2019/10/02/media-week-award@2x.png);
+        background-image: url(https://uploads.guim.co.uk/2019/12/06/design-week@2x.png);
       }
       &:nth-child(5):before {
-        background-image: url(https://uploads.guim.co.uk/2019/10/02/wan-ifra@2x.png);
+        background-image: url(https://uploads.guim.co.uk/2019/12/06/british-media-awards@2x.png);
       }
       &:nth-child(6):before {
-        background-image: url(https://uploads.guim.co.uk/2019/10/02/foreign-press-award@2x.png);
+        background-image: url(https://uploads.guim.co.uk/2019/12/06/the-press-awards@2x.png);
+      }
+      &:nth-child(7):before {
+        background-image: url(https://uploads.guim.co.uk/2019/10/02/the-webby-awards@2x.png);
+      }
+      &:nth-child(8):before {
+        background-image: url(https://uploads.guim.co.uk/2019/10/02/wan-ifra@2x.png);
       }
     }
     @include mq(desktop) {
