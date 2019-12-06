@@ -6,7 +6,7 @@
   }
   .working-report__section__inner {
     padding-bottom: 96px;
-    padding-top: 32px;
+    padding-top: 64px;
   }
   @include mq(tablet) {
     .section-header {
@@ -17,12 +17,26 @@
       transform: none;
       margin: -134px 0 0;
       width: auto;
-      padding-top: 144px;
+      padding-top: 240px;
     }
   }
   @include mq(desktop) {
+    .section-header h3 {
+      left: 200px;
+    }
     .working-report__section__inner {
+      padding-top: 200px;
       margin-top: -89px;
+    }
+  }
+  @include mq(leftCol) {
+    .section-header h3 {
+      left: 184px;
+    }
+  }
+  @include mq(wide) {
+    .section-header h3 {
+      left: 276px;
     }
   }
 
