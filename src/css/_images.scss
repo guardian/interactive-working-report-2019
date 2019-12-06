@@ -44,13 +44,13 @@ figure.element-image {
   .element-atom + &,
   .element-atom + script + & {
     border-bottom: 1px solid #506991;
-  
+
     .element-image__credit {
       bottom: -1px;
       border-bottom: 1px solid #001;
     }
   }
-  
+
 
   .working-report__section__inner > &:last-child {
     @include mq(tablet) {
@@ -67,29 +67,60 @@ figure.element-image {
     padding: 0;
     margin: 0;
     position: relative;
-    .element-image__caption {
-      display: none;
+    padding-top: 4px;
+    color: #767676;
+    font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 10px solid #062962;
+      margin-bottom: 3px;
+      margin-right: 3px;
+      vertical-align: middle;
     }
-    .element-image__credit {
-      // display: none;
-
-      opacity: 0;
-      position: absolute;
-      padding-top: 0;
-      font-size: 12px;
-      line-height: 14px;
-      max-width: 480px;
-      font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-      color: #f6f6f6;
-      bottom: 0;
-      right: 0;
-      padding: 5px 10px;
-      background-color: rgba(#000, 0.75);
+    @include mq(tablet) {
+      padding: 4px 100px 0 20px;
     }
   }
+
+  &.element--showcase figcaption {
+    @include mq(leftCol) {
+      padding-left: 160px;
+    }
+    @include mq(wide) {
+      padding-left: 240px;
+      padding-right: 160px;
+    }
+  }
+
+  // .element-image__caption {
+  //   }
+
+    // .element-image__credit {
+    //   opacity: 0;
+    //   position: absolute;
+    //   padding-top: 0;
+    //   font-size: 12px;
+    //   line-height: 14px;
+    //   max-width: 480px;
+    //   font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    //   color: #f6f6f6;
+    //   top: 0;
+    //   bottom: unset;
+    //   right: 0;
+    //   padding: 5px 10px;
+    //   background-color: rgba(#000, 0.75);
+    // }
+
   &:hover {
     .element-image__credit {
       opacity: 1;
     }
   }
-} 
+}
